@@ -3,7 +3,6 @@ import mysql from "mysql2"
 export const getArticle = (req, res) => {
     const con = mysql.createConnection({
         host: process.env.MYSQL_HOST,
-        port: process.env.MYSQL_PORT,
         user: process.env.MYSQL_USER,
         password: process.env.MYSQL_PASSWORD,
         database: process.env.MYSQL_DBNAME,
@@ -25,7 +24,6 @@ export const getArticles = (req, res) => {
     console.log( process.env.MYSQL_HOST)
     const con = mysql.createConnection({
         host: process.env.MYSQL_HOST,
-        port: process.env.MYSQL_PORT,
         user: process.env.MYSQL_USER,
         password: process.env.MYSQL_PASSWORD,
         database: process.env.MYSQL_DBNAME,
@@ -46,7 +44,6 @@ export const getArticles = (req, res) => {
 export const updateArticle = (req, res) => {
     const con = mysql.createConnection({
         host: process.env.MYSQL_HOST,
-        port: process.env.MYSQL_PORT,
         user: process.env.MYSQL_USER,
         password: process.env.MYSQL_PASSWORD,
         database: process.env.MYSQL_DBNAME,
@@ -67,7 +64,6 @@ export const updateArticle = (req, res) => {
 export const createArticle = (req, res) => {
     const con = mysql.createConnection({
         host: process.env.MYSQL_HOST,
-        port: process.env.MYSQL_PORT,
         user: process.env.MYSQL_USER,
         password: process.env.MYSQL_PASSWORD,
         database: process.env.MYSQL_DBNAME,
@@ -88,7 +84,6 @@ export const createArticle = (req, res) => {
 export const deleteArticle = (req, res) => {
     const con = mysql.createConnection({
         host: process.env.MYSQL_HOST,
-        port: process.env.MYSQL_PORT,
         user: process.env.MYSQL_USER,
         password: process.env.MYSQL_PASSWORD,
         database: process.env.MYSQL_DBNAME,
